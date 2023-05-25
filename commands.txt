@@ -1,0 +1,39 @@
+Hi Everyone...
+Here are some Git commands everyone should know while working with Git.
+
+Done with installing of git,
+We have to open git bash and this is the terminal where we will write all our commands.
+ 
+For the first time when ope the git bash terminal,
+we have to set our configurations.
+
+global config --global user.name "your_username_here"
+global config --global user.email "your_email_here"
+
+**To check our configuation**
+git config --global --edit
+
+--To make the directory
+mkdir "your_directory_name"
+
+--To check the present working directory
+pwd
+
+--To list down all the files in the directory
+ls
+
+--To go in the directory
+cd "your_directory_name"
+
+--To make your directory a git directory
+git init
+
+--To check hidden folders
+ls -a
+
+--To make a file in a directory
+touch "your_file_name"
+eg- touch sample.txt
+
+--To write inside the file
+vi "your_file_name"
