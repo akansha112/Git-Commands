@@ -81,6 +81,17 @@ git checkout "commit_hash_code"
 --To go to your initial state
 git checkout master
 
+--To make the file which is ignored by git
+There are some steps:
+1-Make the file which you want to be ignored by git
+eg: touch key.txt
+2-Make another file ie .gitignore
+eg: touch .gitignore
+3-Now, open the gitignore file and put the name of file which you want to ignore ie key
+4-Now, you will see that the git is not able to track the key.txt file
+5-And, if you want to untracked the .gitignore file then put the name of .gitignore file in itself.
+6-Now, the git will aslo not able to track the gitignore file.
+
 
 
 
