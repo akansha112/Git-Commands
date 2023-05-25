@@ -38,6 +38,12 @@ eg- touch sample.txt
 --To write inside the file
 vi "your_file_name"
 
+--To display the data inside the file
+cat "your_file_name"
+
+--To delete the file
+rm -rf "your_file_name"
+
           ******************************************************************** 
 Git has something called the "staging area" or "index". This is an intermediate area where commits can be formatted and reviewed before completing the commit.
 
@@ -47,3 +53,56 @@ This allows you to stage only portions of a modified file. Gone are the days of 
 
 Of course, Git also makes it easy to ignore this feature if you don't want that kind of control — just add a '-a' to your commit command in order to add all changes to all files to the staging area.
             ***************************************************************
+--To show the status of the directory ie tracked or untracked files
+git status
+
+--To set the single file in the staging area
+git add "your_file_name"
+
+--To set all the files in the staging area
+git add .
+
+--To commit the files in the staging area
+git commit -m "your_message_here"
+
+--To check the number of commits we made
+git log 
+
+--To get back our file from staged area to unstage area
+git restore --staged "your_file_name"
+
+
+      ********************************************************
+ Every commit provides its own hashcode. So, If you want to go to the previous commit and checkout the data of it that what you have done then we use a checkout command that is provided below..
+     ***********************************************************
+--To check the previous commit state
+git checkout "commit_hash_code"
+
+--To go to your initial state
+git checkout master
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
